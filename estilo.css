@@ -1,0 +1,67 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+.background-image-container {
+    position: relative;
+  }
+  
+  .background-image-container img {
+    max-width: 260%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: auto;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content {
+    padding: auto;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-36%, -42%);
+    color: aliceblue;
+  padding: 0px;
+  margin: -15px -1px -2px;
+  }
+
+  .navBar {
+  padding: 15px 15px;
+  position: absolute;
+  top: 60%;
+  left: 45%;
+
+  transform: translate(-50%, -50%);
+
+
+}
+.teste{
+  position: absolute;
+    top: 30%;
+}
+.abaixo {
+  margin-top: 50px;
+}
+
+.barra1 {
+  position: absolute;
+  top: 48%;
+padding: 0px 0px 0px 0px;
+margin: 5px 5px 0px 0px;
+  
+}
+.h3main{
+  color:#414042;
+  font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+}
