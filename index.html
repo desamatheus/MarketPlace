@@ -1,380 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
 </head>
 <body>
-  
-   <div class="">
-        <div class="container text-center">
+    <header>
+        <div class="background-image-container">
+          <img src="img/BackGround.png" class="img-fluid" alt="uma pessoa em uma sala com um notebook">
+          <div class="overlay-image">
+            <img src="img/Logo_Wordmark_Transparent_White_580x.png" class="img-fluid" alt="logo">
+          </div>
+<!-- 
+          Que dor de cabeça ja no inico resolvi deixar assim mesmo depois eu volto e tento consertar -->
+          <div class="navBar">
+            <nav class="navbar navbar-expand-sm bg-body-tertiary">
+              <div class="container position-static">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Mesas e Cadeiras</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Prateleiras de Mesa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Acessórios de Mesa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Fones</a>
+                    </li> <li class="nav-item">
+                      <a class="nav-link" href="#">Mouses</a>
+                    </li> <li class="nav-item">
+                      <a class="nav-link" href="#">Teclados</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Monitores</a>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="content">
+            <h1>O Verdadeiro Home Office</h1>
+            <p>Traga Conforto e Eficiência ao Seu Home Office com Nossos Produtos Exclusivos! Trabalhar de casa nunca foi tão prático e inspirador como agora, graças à nossa seleção cuidadosamente escolhida de produtos para home office.</p>
+          </div>
+        </div>
+      </header>
+      
+      <main>
+        <h3 class="h3main">
+          COMPRE POR CATEGORIA</h1>
+<!--           
+          compre por categoria -->
+
+          <div class="container">
             <div class="row">
-                <div class="new-navbar">
-                    <h4 id="fixed-top">Enviamos para todo o Brasil</h4>
+                <div class=" col-8 col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="img/Espaço de trabalho.png" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <button style="position: absolute; bottom: 10px; right: 10px;" class="btn btn-primary">Botão na Imagem</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="img/Mesas para escritorio.png" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <button style="position: absolute; bottom: 10px; right: 10px;" class="btn btn-primary">Botão na Imagem</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-8 col-md-3 col-sm-6">
+                    <div class= "card">
+                        <img src="img/Acessorios para escritorio.png" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <button style="position: absolute; bottom: 10px; right: 10px;" class="btn btn-primary">Botão na Imagem</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-8 col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="img/Iluminação.png" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <button style="position: absolute; bottom: 10px; right: 10px;" class="btn btn-primary">Botão na Imagem</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-   </div>
-   
-    <!--Background e Logo-->
+        
+        
 
-
-
-    <div class="container-fluid ">
-        <div class="row bg-1 text-center">
-            <img src="img\BackGround.png" class="img-fluid" alt="Office" width="1920px"
-            height="900px">
-            <div class="col">
+<!-- 
+        --CARROUSSEL-- -->
+       
+<div class="container">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mx-auto">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/Acessorios para escritorio.png" class="d-block w-75 mx-auto" alt="Imagem 1">
+                    </div>
+                    <div class="col-md-6">
+                      <p>INDICAMOS OS ITENS COM BASE NO SEU PERFIL DE COMPRA </p>
+                      <P>******</P>
+                        
+                        <p>Tudo Funcionou perfeitamente, montei meu espaço com itens feitos sob medida para mim.
+                          <br> <cite>-Maria Julia C.</cite>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-2 mt-4 text-center">
-                <img class="img-2" src="img\Logo_Wordmark_Transparent_White_580x.png" alt="Logo" width="290px" height="290px"> 
-               
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/Iluminação.png" class="d-block w-75 mx-auto" alt="Imagem 2">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Descrição 2</h3>
+                        <p>Esta é a descrição do segundo slide.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col">          
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/Iluminação.png" class="d-block w-75 mx-auto" alt="Imagem 3">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Descrição 3</h3>
+                        <p>Esta é a descrição do terceiro slide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+   <!--Mais Vendidos-->
+
+<p>espaço em branco</p>
+
+  
+<h3>Mais Vendidos</h3>
+<div class="container text-center">
+    <div id="mais-vendidos">
+        <h2>MAIS VENDIDOS</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem;">
+                <img src="img/Prateleiras-para-mesas.png" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Prateleira de mesa</h5>
+                    <p class="card-text">R$ 220,00</p>
+                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem;">
+                <img src="img/suporte-para-notebook.png" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Suporte para Notebook</h5>
+                    <p class="card-text">R$ 79,99</p>
+                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem;">
+                <img src="img/Mesa-de-trabalho.png" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mesa de Trabalho</h5>
+                    <p class="card-text">R$ 1.299,00</p>
+                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem;">
+                <img src="img/DockBook Vertical.png" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">DockBook Vertical</h5>
+                    <p class="card-text">R$ 159,99</p>
+                    <a href="#" class="btn btn-primary">Compre Agora!</a>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!--Links-->
-    
-
-   <div class="container text-center">
-        <div class="row row-cols-sm-1 row-cols-md-6 row-cols-lg-6 gx-0 p-2">
-
-            <div class="col">
-                <p><a href="#" id="topLink" class="link-light link-offset-2 link-underline-opacity-0  ">Mesas e Cadeiras</a></p>               
-            </div>
-            <div class="col"> 
-                <p><a href="#" id="topLink" class="link-light link-offset-2 link-underline-opacity-0  ">Prateleiras de Mesa</a></p>
-            </div>
-            <div class="col"> 
-                <p><a href="#" id="topLink" class="link-light link-offset-2 link-underline-opacity-0  ">Acessórios de Mesa</a></p>
-            </div>
-            <div class="col"> 
-                <p><a href="#" id="topLink" class="link-light link-offset-2 link-underline-opacity-0  ">Fones</a></p>
-            </div>
-            <div class="col"> 
-                <p><a href="#" id="topLink" class="link-light link-offset-2 link-underline-opacity-0  ">Mouses</a></p>
-            </div>
-            <div class="col"> 
-                <p><a href="#" id="topLink" class="link-light link-offset-2 link-underline-opacity-0  ">Teclados</a></p>
-            </div>
-            <div class="col"> 
-                <p><a href="#" id="topLink" class="link-light link-offset-2 link-underline-opacity-0  ">Monitores</a></p>
-            </div>
-        </div>
-   </div>
-    
-   <!--O verdadeiro home office-->
-    
-   <div class="container " id="homeOffice">
-        <div class="row">
-            <div class="col">
-                <h1 id="h1">O Verdadeiro Home Office</h1>
-                <h2 id="h2">Traga Conforto e Eficiência ao Seu Home Office com Nossos Produtos Exclusivos!
-                    Trabalhar de casa nunca foi tão prático e inspirador como agora, graças à nossa seleção cuidadosamente escolhida de produtos para home office.
-                </h2>
-                <button type="button" class="btn btn-light btn-lg">COMPREAQUI!</button>
-            </div>
-            <div class="col"></div>
-        </div>
-   </div>
-
-   <!--Compre por Categoria-->
-   <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h3 id="h3">COMPRE POR CATEGORIA</h3>
-            </div>
-        </div>
-   </div>
-
-   <div class="container">
-     <div class="row p-0 g-5 ">
-            <div class="col-3 ">
-                <img src="img\Espaço de trabalho.png" alt="workspace">
-            </div>
-            <div class="col-3">
-                <img src="img\Mesas para escritorio.png" alt="">
-            </div>
-            <div class="col-3">
-                <img src="img\Acessorios para escritorio.png" alt="">
-            </div>
-            <div class="col-3">
-                <img src="img\Iluminação.png" alt="lights">
-            </div>
-        </div>
-   </div>
-   <div class="container text-center">
-        <div class="row compre-por-categoria">
-            <div class="col-3">
-                <button type="button" class="btn btn-light btn-lg">ESPAÇO DE TRABALHO</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-light btn-lg">MESAS DE ESCRITÓRIO</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-light btn-lg">ACESSÓRIOS DE ESCRITÓRIO</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-light btn-lg">ILUMINAÇÃO</button>
-            </div>
-        </div>
-   </div>
-    
-   <!--CARROUSSEL-->
-
-   <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col-4 p-4 ms-4 ">
-                
-            </div>
-            <div class="col-4 p-4 ms-4">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-            
-                      </button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img\Link → HumanCentric-70_720x.jpg.png" class="d-block w-100 carousel-img" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>indicamos os itens com base no seu 
-                            perfil de compra</h5>
-                          <h3>Tudo Funcionou perfeitamente, montei meu
-                            espaço com itens feitos sob medida para mim.</h3>
-                            <h6>— Giovanna B.</h6>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="http://placehold.it/548x548" class="d-block w-100 carousel-img" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="http://placehold.it/548x548" class="d-block w-100 carousel-img" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <div class="col-4"></div>
-           
-        </div>
-   </div>
-
-   <!--Mais Vendidos-->
-
-   <div class="container text-center">
-        <div id="mais-vendidos"><h2>MAIS VENDIDOS</h2></div>
-        <div class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-4 col">
-            <div class="card" style="width: 18rem;">
-                <img src="img\Prateleiras-para-mesas.png" class="card-img-top img-thumbnail" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Prateleira de mesa</h5>
-                  <p class="card-text">R$ 220,00</p>
-                  <a href="#" class="btn btn-primary">Compre Agora!</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="img\suporte-para-notebook.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Suporte para Notebook</h5>
-                      <p class="card-text">R$ 79,99</p>
-                      <a href="#" class="btn btn-primary">Compre Agora!</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="img\Mesa-de-trabalho.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mesa de Trabalho</h5>
-                      <p class="card-text">R$1.299,00</p>
-                      <a href="#" class="btn btn-primary">Compre Agora!</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="img\DockBook Vertical.png" class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">DockBook Vertical</h5>
-                      <p class="card-text">R$ 159,99</p>
-                      <a href="#" class="btn btn-primary">Compre Agora!</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-   </div>
 
    <!--O que fazemos?-->
 
+   
    <div class="container text-center">
-        <div class="row m-4 p-4">
-            <div class="col-6 p-4">
-                <h6>O que fazemos?</h6>
-                <h3>Uma Experiência Aprimorada de Trabalho</h3>
-                <p>Acreditamos que seu home office deve ser um reflexo autêntico
-                 de quem você é. Ao preencher nosso formulário personalizado, 
-                 você nos ajuda a entender seus gostos, cores favoritas e estilo
-                  de decoração preferido.
-                </p>
-                <p>
-                    Seu espaço de trabalho é único, e nós sabemos disso. 
-                    Com base nas suas respostas, vamos sugerir cadeiras ergonômicas, 
-                    suportes para monitor ajustáveis, 
-                    organizadores de mesa e outros itens que se encaixem perfeitamente nas 
-                    suas necessidades.
-                </p>
-                <button type="button" class="btn btn-outline-dark btn-lg">PREENCHA NOSSO FORMULARIO</button>
-            </div>
-            <div class="col-6 p-4">
-                <img src="img\uma-experiencia-aprimorada-de-trabalho.png" alt="" width="100%" height="100%">
-            </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h6>O que fazemos?</h6>
+            <h3>Uma Experiência Aprimorada de Trabalho</h3>
+            <p>Acreditamos que seu home office deve ser um reflexo autêntico
+                de quem você é. Ao preencher nosso formulário personalizado, 
+                você nos ajuda a entender seus gostos, cores favoritas e estilo
+                de decoração preferido.
+            </p>
+            <p>
+                Seu espaço de trabalho é único, e nós sabemos disso. 
+                Com base nas suas respostas, vamos sugerir cadeiras ergonômicas, 
+                suportes para monitor ajustáveis, 
+                organizadores de mesa e outros itens que se encaixem perfeitamente nas 
+                suas necessidades.
+            </p>
+            <button type="button" class="btn btn-outline-dark btn-lg">PREENCHA NOSSO FORMULARIO</button>
         </div>
-   </div>
+        <div class="col-md-6">
+            <img src="img/uma-experiencia-aprimorada-de-trabalho.png" alt="" width="100%" height="100%">
+        </div>
+    </div>
+</div>
+
 
    <!--Por que nós fazemos?-->
 
    <div class="container">
-        <div class="row m-4">
-            <div class="col-6 p-4">
-                <img src="img\por-que-nos-fazemos.png" alt="" width="100%" height="100%">
-            </div>
-            <div class="col-6 p-4">
-                <h6>POR QUE NÓS FAZEMOS?</h6>
-                <h3>Fazer o seu melhor trabalho é importante</h3>
-                <p>
-                 Quando as pessoas estão totalmente engajadas, elas podem desbloquear
-                 as habilidades e talentos que possuem dentro delas e contribuir de 
-                 forma mais eficaz para o nosso mundo.
-                </p>
-                <p>
-                    Quando criamos um ambiente de trabalho para nós e para 
-                    aqueles que nos rodeiam que apoia o envolvimento total, 
-                    possibilitamos uma maior inovação para as nossas 
-                    organizações e melhoramos o bem-estar dos membros da 
-                    sua equipe e clientes.
-                </p>
-                <button type="button" class="btn btn-outline-dark btn-lg text-center">PREENCHA NOSSO FORMULARIO</button>
-            </div>
+    <div class="row">
+        <div class="col-md-6 p-4">
+            <img src="img/por-que-nos-fazemos.png" alt="" width="100%" height="100%">
         </div>
-   </div>
+        <div class="col-md-6 p-4">
+            <h6>POR QUE NÓS FAZEMOS?</h6>
+            <h3>Fazer o seu melhor trabalho é importante</h3>
+            <p>
+                Quando as pessoas estão totalmente engajadas, elas podem desbloquear
+                as habilidades e talentos que possuem dentro delas e contribuir de 
+                forma mais eficaz para o nosso mundo.
+            </p>
+            <p>
+                Quando criamos um ambiente de trabalho para nós e para 
+                aqueles que nos rodeiam que apoia o envolvimento total, 
+                possibilitamos uma maior inovação para as nossas 
+                organizações e melhoramos o bem-estar dos membros da 
+                sua equipe e clientes.
+            </p>
+            <button type="button" class="btn btn-outline-dark btn-lg text-center">PREENCHA NOSSO FORMULARIO</button>
+        </div>
+    </div>
+</div>
 
-   <!--Pacotes Personalizados-->
+ <!--Pacotes Personalizados-->
        
-   <div class="container-fluid text-center">
-        <div class="row">
-            <div class="image-container object-fit-cover">
-                <img src="img\pacotes-personalizados.png" alt="" class="w-100 h-100">
-            </div>           
-            <div class="position-absolute  w-100 overlay-text container-fluid">
-                <h6 class="text-over-img">ELEVE SEU ESPAÇO DE TRABALHO</h6>
-                <h2 class="text-over-img">PACOTES</h2>
-                <h2 class="text-over-img">PERSONALIZADOS</h2>
-                <h6 class="text-over-img">Espaço para suas ferramentas e tecnologia perfeitamente selecionadas</h6>
-                <button type="button" class="btn btn-light btn-lg">COMPRE AGORA</button>
-            </div>
+ <div class="container-fluid text-center">
+    <div class="row">
+        <div class="image-container object-fit-cover">
+            <img src="img\pacotes-personalizados.png" alt="" class="w-100 h-100">
+        </div>           
+        <div class="position-absolute  w-100 overlay-text container-fluid">
+            <h6 class="text-over-img">ELEVE SEU ESPAÇO DE TRABALHO</h6>
+            <h2 class="text-over-img">PACOTES</h2>
+            <h2 class="text-over-img">PERSONALIZADOS</h2>
+            <h6 class="text-over-img">Espaço para suas ferramentas e tecnologia perfeitamente selecionadas</h6>
+            <button type="button" class="btn btn-light btn-lg">COMPRE AGORA</button>
         </div>
-   </div>
+    </div>
+</div>
 
-   <!--Newsletter-->
+      </main>
+      
 
-   <div class="container-fluid text-center">
-        <div class="row m-0">
-            <div class="newsletter-background p-4 ">
-                <h3 id="newslatter-text">Assine nossa Newsletter</h3>
-                <p id="newslatter-text-paragraph">Fique atualizado com os lançamentos de produtos e nossas ideias sobre como 
-                    criar um ambiente de trabalho produtivo. 
-                    Diretamente para sua caixa de entrada.</p>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-3 m-4">
-                        <form class="form-floating text-center" id="form-position">
-                            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" >
-                            <label for="floatingInputValue">email</label>    
-                        </form>
-                    </div>
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-dark btn-lg" id="newslatter-button">INSCREVA-SE</button>
-                    </div>
-            </div>
-        </div>
-   </div>
-    
-   <!--Footer-->
 
-   <footer class="container-fluid">
-        <div class="row">
-            <div class="col p-4 m-4">
-                <h6>Compre por Categoria</h6>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Cartão de Presente</a></p>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Estação de Trabalho</a></p>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Eletrônicos</a></p>
-            </div>
-            <div class="col p-4 m-4">
-                <h6>Aprenda</h6>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Sobre nós</a></p>
-            </div>
-            <div class="col p-4 m-4">
-                <h6>Resources</h6>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Support</a></p>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Returns</a></p>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">FAQ</a></p>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Privacy</a></p>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Patents</a></p>
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Terms & Conditions</a></p>
-            </div>
-            <div class="col p-4 m-4">
-                <h6>Contact Us</h6>
-                <p>312-549-8984</p>
-                <p>2045 W Grand Ave</p>
-                <p>Chicago, Illinois 60612</p>
-                <p>support@humancentric.com</p>
-            </div>
-        </div>
-        <div class="line"></div>
-        <div class="row g- text-center">
-            <div class="col p-4">
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Facebook</a></p>
-            </div>
-            <div class="col p-4">
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Twitter</a></p>
-            </div>
-            <div class="col p-4">
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Printerest</a></p>
-            </div>
-            <div class="col p-4">
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Instagram</a></p>
-            </div>
-            <div class="col p-4">
-                <p><a href="#"  class="link-secondary link-offset-2 link-underline-opacity-0  ">Youtube</a></p>
-            </div>
-        </div>
-   </footer>
-   <a href="depois.html">a outra pagina</a>
 
+
+
+
+
+    <!-- scrip aqui -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>     
     <script src="app.js"></script>
+    
 </body>
 </html>
