@@ -65,3 +65,50 @@ margin: 5px 5px 0px 0px;
     line-height: 36px;
     text-align: center;
 }
+
+/********************************************/
+.background-image {
+  background-image: url('img/pacotes-personalizados.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: #FFFFFF; /* Cor do texto branca */
+  text-align: center;
+  padding: 20px;
+  z-index: 0;
+}
+
+.PacContext {
+  padding: 20px;
+  color: #FFFFFF; /* Cor do texto branca */
+  z-index: 1;
+}
+
+/********************************************************/
+
+.Newsletter {
+  background-color: #414042;
+}
+.NewsletterH3{
+text-align: center;
+}
+
+
+/**********************************/
+footer{
+  background-color: #ffffff;
+
+}
+.footerLinks{
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #414042;
+  padding: 7px;
+
+}
+.simbolo {
+  text-align: right;
+  font-size: 14px;
+}
