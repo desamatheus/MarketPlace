@@ -1,47 +1,55 @@
+@media (max-width: 768px) {
+  body {
+      overflow-y: auto; /* Desabilita a rolagem vertical */
+      overflow-x: hidden; /* Permite a rolagem horizontal */
+  }
+}
 html, body {
   padding: 0;
   margin: 0;
+  
 }
-.background-image-container {
-    position: relative;
-  }
+/********** header **************/
+
+.headerBack {
+  background-image: url('img/BackGround.png');
+  background-size: cover;
   
-  .background-image-container img {
-    max-width: 260%;
-    height: auto;
-    display: block;
-    margin: auto;
-    padding: auto;
-  }
-  
-  .overlay-image {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+  background-position: center;
+  height: 800px;
+  color: #FFFFFF; /* Cor do texto branca */
+  text-align: center;
+  padding: 20px;
+  z-index: 0;
+}
+
+
+
+
   .content {
     padding: auto;
     position: absolute;
-    top: 90%;
-    left: 40%;
+    top: 64%;
+    left: 29%;
     transform: translate(-36%, -42%);
-    color: aliceblue;
+    color: #FFFFFF;
   padding: 0px;
-  margin: -15px -1px -2px;
+
+  z-index: 1;
   }
 
   .navBar {
   padding: 15px 15px;
   position: absolute;
-  top: 60%;
+  top: 38%;
   left: 45%;
 
   transform: translate(-50%, -50%);
 
 
 }
+/*************** main ***********/
+
 .teste{
   position: absolute;
     top: 30%;
@@ -64,8 +72,11 @@ margin: 5px 5px 0px 0px;
     font-weight: 700;
     line-height: 36px;
     text-align: center;
+    margin: 21px;
 }
-
+.margina{
+  margin: 21px;
+}
 /********************************************/
 .background-image {
   background-image: url('img/pacotes-personalizados.png');
