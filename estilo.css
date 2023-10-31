@@ -87,39 +87,145 @@ margin: 5px 5px 0px 0px;
   text-align: center;
   padding: 20px;
   z-index: 0;
-}
-
-.PacContext {
-  padding: 20px;
-  color: #FFFFFF; /* Cor do texto branca */
-  z-index: 1;
-}
-
-/********************************************************/
-
-.Newsletter {
-  background-color: #414042;
-}
-.NewsletterH3{
-text-align: center;
-}
-
-
-/**********************************/
-footer{
-  background-color: #ffffff;
-
-}
-.footerLinks{
+  @media (max-width: 768px) {
+    body {
+        overflow-y: auto; /* Desabilita a rolagem vertical */
+        overflow-x: hidden; /* Permite a rolagem horizontal */
+    }
+  }
+  html, body {
+    padding: 0;
+    margin: 0;
+    
+  }
+  /********** header **************/
+  
+  .headerBack {
+    background-image: url('img/BackGround.png');
+    background-size: cover;
+    
+    background-position: center;
+    height: 800px;
+    color: #FFFFFF; /* Cor do texto branca */
+    text-align: center;
+    padding: 20px;
+    z-index: 0;
+  }
+  
+  
+  
+  
+    .content {
+      padding: auto;
+      position: absolute;
+      top: 64%;
+      left: 29%;
+      transform: translate(-36%, -42%);
+      color: #FFFFFF;
+    padding: 0px;
+  
+    z-index: 1;
+    }
+  
+    .navBar {
+    padding: 15px 15px;
+    position: absolute;
+    top: 38%;
+    left: 45%;
+  
+    transform: translate(-50%, -50%);
+  
+  
+  }
+  
+  
+  .loguin {
+    text-decoration: none;
+    top: 10%;
+    left: 80%;
+    position:absolute;
+  
+  }
+  /*************** main ***********/
+  
+  .teste{
+    position: absolute;
+      top: 30%;
+  }
+  .abaixo {
+    margin-top: 50px;
+  }
+  
+  .barra1 {
+    position: absolute;
+    top: 48%;
+  padding: 0px 0px 0px 0px;
+  margin: 5px 5px 0px 0px;
+    
+  }
+  .h3main{
+    color:#414042;
+    font-size: 30px;
+      font-family: Montserrat;
+      font-weight: 700;
+      line-height: 36px;
+      text-align: center;
+      margin: 21px;
+  }
+  .margina{
+    margin: 21px;
+  }
+  /********************************************/
+  .background-image {
+    background-image: url('img/pacotes-personalizados.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    
+    text-align: center;
+    padding: 20px;
+    z-index: 0;
+  }
+  
+  .PacContext {
+    padding: 20px;
+    color: hsl(300, 2%, 8%) ; /* Cor do texto branca */
+    z-index: 1;
+  }
+  
+  /********************************************************/
+  
+  .Newsletter {
+    background-color: #cdccce;
+  }
+  .NewsletterH3{
   text-align: center;
-}
-footer a {
-  text-decoration: none;
-  color: #414042;
-  padding: 7px;
-
-}
-.simbolo {
-  text-align: right;
-  font-size: 14px;
-}
+  }
+  
+  
+  /**********************************/
+  footer{
+    background-color: #ffffff;
+  
+  }
+  .footerLinks{
+    text-align: center;
+  }
+  footer a {
+    text-decoration: none;
+    color: #414042;
+    padding: 7px;
+  
+  }
+  .simbolo {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  /************/
+  
+  .form-container {
+    max-width: 350px;
+    padding:  1rem;
+  }
