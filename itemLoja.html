@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-br" >
 <head>
@@ -8,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(170, 170, 115);
+            margin: 0;
+            padding: 60px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,55 +28,143 @@
 
 
 
-
-
-<div class="container">
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/Prateleiras-para-mesas.png" alt="Imagem 1" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <h1>Nome produto</h1>
-                                <p>Preço produto</p>
-                                <ul>
-                                    <li>Marca:?</li>
-                                    <li>Cor:?</li>
-                                    <li>Quantidade</li>
-                                    <li>Medida</li>
-                                </ul>
-
-                </div>
-                <div class="col-md-4">
-                    <h2>preço</h2>
-                    <p>entrega : dia</p>
-                    <p>digite o cep aqui</p>
-                    <p>produto em estoque</p>
-                    <button> adicionar ao carrinho</button> <br>
-                    <button>comprar agora</button>
-                    <p>pagamento: transação segura</p>
-                    <p>enviado por ?</p>
-                    <p>Vendido por ?</p>
-
+<main>
+    
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/Prateleiras-para-mesas.png" alt="Imagem 1" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <h1>Nome produto</h1>
+                                    <p><small class="pequeno">R$</small>951<small class="pequeno">42</small></p>
+                                    <ul>
+                                        <li><strong>Marca</strong> Qualquer uma</li>
+                                        <li><strong>Cor</strong> Bege  </li>
+                                        <li><strong>Quantidade</strong>    </li>
+                                        <li><strong>Medida</strong></li>
+                                    </ul>
+    
+                    </div>
+                    <div class="col-md-4">
+                        <p><small class="pequeno">R$</small>951<small class="pequeno">42</small></p>
+                        <p>entrega : dia</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formularioModal">
+                            Digite o seu cep
+                          </button>
+                        <p>produto em estoque</p>
+                        <button> adicionar ao carrinho</button> <br>
+                        <button>comprar agora</button>
+                        <p>pagamento: transação segura</p>
+                        <p>enviado por ?</p>
+                        <p>Vendido por ?</p>
+    
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
+    <div class="cep aqui">
+    
+    
+    
+    
+    
+      <!-- Modal -->
+      <div class="modal fade" id="formularioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Formulário</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="cep">Cep</label>
+                  <input type="text" class="form-control" id="cep">
+                </div>
+                <div class="form-group">
+                  <label for="logradouro">logradouro</label>
+                  <input type="text" class="form-control" id="logradouro">
+                </div>
+                <div class="form-group">
+                  <label for="complemento">complemento</label>
+                  <input type="text" class="form-control" id="complemento">
+                </div>
+                <div class="form-group">
+                  <label for="bairro">bairro</label>
+                  <input type="text" class="form-control" id="bairro">
+                </div>
+                <div class="form-group">
+                  <label for="localidade">localidade</label>
+                  <input type="text" class="form-control" id="localidade">
+                </div>
+                <div class="form-group">
+                    <label for="uf">uf</label>
+                    <input type="text" class="form-control" id="uf">
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+        <h3>detalhes técnicos do produto</h3>
+    
+    <p>Mussum Ipsum, cacilds vidis litro abertis.  Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Detraxit consequat et quo num tendi nada. A ordem dos tratores não altera o pão duris. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+    
+        Si num tem leite então bota uma pinga aí cumpadi! Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Detraxit consequat et quo num tendi nada. Morbi viverra placerat justo, vel pharetra turpis.
+    
+        Copo furadis é disculpa de bebadis, arcu quam euismod magna. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Viva Forevis aptent taciti sociosqu ad litora torquent. Negão é teu passadis, eu sou faxa pretis.</p>
+    
+    
+    
+    <h3>Os clientes também visualizaram esses produtos</h3>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</main>
 
 
-<div>
-    <p>detalhes técnicos do produto</p>
-</div>
 
 
 
-
-
-
-
-<h3>Os clientes também visualizaram esses produtos</h3>
 
 
 
@@ -129,6 +223,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
   
     
 </body>

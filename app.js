@@ -1,12 +1,37 @@
-console.log("ola mundo");
-
-let a = 10
-let b = 20
-let x = 1
-let y =2
-
-function soma() {
-    return a+y
-    
+const cep = document.querySelector("#cep"); 
+ 
+const options = {
+   method: 'GET',
+   mode: 'cors',
+   cache: 'default'
 }
-console.log(soma());
+
+ const showData =(result) =>{
+   for (const campo in result){
+       if(document.querySelector("#"+campo) ){
+           document.querySelector("#"+campo).value = result [campo];
+       }
+   }
+ }
+
+cep.addEventListener("blur", (e) =>{
+   console.log(cep.value);
+   let search =cep.value.replace("-","");
+   console.log(search);
+
+   fetch(`https://viacep.com.br/ws/${search}/json/ `,options )
+   .then(response => {
+       response.json()
+       .then(data => {
+           console.log(data)
+           showData(data)
+       })
+   })
+.catch(e =>{
+   console.log("ERRO: "+e)
+})
+
+
+
+
+  })
